@@ -5,6 +5,7 @@ function MyApp6(props) {
     <div>
       <Comp1 />
       <Comp2 />
+      <Comp3 />
     </div>
   );
 }
@@ -42,6 +43,21 @@ function Comp2() {
         <li>{d.name}</li>
         <li>{d.city}</li>
       </ul>
+    </div>
+  );
+}
+
+function Comp3() {
+  const a = "note";
+  const b = 3.14;
+
+  // attribute(property , prop)에 값으로 넣을 수 있다
+
+  return (
+    <div>
+      <h1>{a}</h1>
+      <h2 className={a}> {b}</h2>
+      <input type="text" value={b} />
     </div>
   );
 }
