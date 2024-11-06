@@ -6,6 +6,7 @@ function MyComp() {
     </div>
   );
 }
+
 function App2() {
   return (
     <div>
