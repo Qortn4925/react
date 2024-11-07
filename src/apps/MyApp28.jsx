@@ -3,6 +3,7 @@ import { Input, Textarea } from "@chakra-ui/react";
 import { Field } from "../components/ui/field.jsx";
 import { Checkbox } from "../components/ui/checkbox.jsx";
 import { Radio, RadioGroup } from "../components/ui/radio.jsx";
+import { Switch } from "../components/ui/switch.jsx";
 
 function MyApp28(props) {
   return (
@@ -26,6 +27,12 @@ function MyApp28(props) {
         colorPalette={"green"}
         bg={"green.300"}
       />
+
+      <h5> switch</h5>
+      <Switch variant="raised" colorPalette="purple">
+        {" "}
+        Label
+      </Switch>
     </div>
   );
 }
