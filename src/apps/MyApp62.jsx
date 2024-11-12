@@ -28,6 +28,35 @@ function MyApp62(props) {
         {" "}
         sub22
       </Button>
+
+      <Button
+        onClick={() => {
+          axios.post("/api/main2/sub3", {
+            name: "son",
+            age: 99,
+            married: true,
+            items: ["1", "2", "3"],
+            team: { name: "토트넘", location: "런던" },
+          });
+        }}
+      >
+        {" "}
+        sub22
+      </Button>
+
+      <Button
+        onClick={() => {
+          axios.post("api/main2/sub4", {
+            id: 10,
+            name: "상품명",
+            availiable: false,
+            shops: ["낄낄1", "낄낄2"],
+            attributes: { name: "헬로우", value: "지역" },
+          });
+        }}
+      >
+        프로덕트
+      </Button>
     </div>
   );
 }
