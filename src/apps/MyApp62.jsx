@@ -57,6 +57,49 @@ function MyApp62(props) {
       >
         프로덕트
       </Button>
+
+      <Button
+        onClick={() => {
+          axios.post("api/main2/sub5", ["coffee", "latte", "mocah"]);
+        }}
+      >
+        {" "}
+        배열
+      </Button>
+      <Button
+        onClick={() => {
+          axios.post("/api/main2/sub6", [
+            { name: "1", age: 5 },
+            { name: "hello", age: 15 },
+            { name: "gkgkgk", age: 333 },
+          ]);
+        }}
+      >
+        자바빈 객체 배열
+      </Button>
+
+      <Button
+        onClick={() => {
+          axios.post("api/main2/sub7", [
+            {
+              title: "제목",
+              author: "작성자",
+              content: "내용",
+              price: 155,
+              quantity: 3,
+            },
+            {
+              title: "제목1",
+              author: "작성자1",
+              content: "내용1",
+              price: 155,
+              quantity: 3,
+            },
+          ]);
+        }}
+      >
+        북{" "}
+      </Button>
     </div>
   );
 }
