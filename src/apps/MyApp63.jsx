@@ -58,6 +58,30 @@ function MyApp63(props) {
         {" "}
         delete 데이터
       </Button>
+      <hr />
+
+      <Button
+        onClick={() => {
+          axios.put("/api/main3/sub7", { id: "hello", boolenad: true });
+        }}
+      >
+        {" "}
+        put데이터 연습
+      </Button>
+
+      <Button
+        onClick={() => {
+          axios.delete("/api/main3/sub8", {
+            data: {
+              array: ["arr1", "arr2"],
+              num: 13,
+            },
+          });
+        }}
+      >
+        {" "}
+        delete
+      </Button>
     </div>
   );
 }
